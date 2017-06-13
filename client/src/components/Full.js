@@ -6,7 +6,7 @@ import Breadcrumb from './Breadcrumb';
 import Aside from './Aside';
 import Footer from './Footer';
 
-import Dashboard from './Dashboard'
+import Home from './Home'
 
 class Full extends Component {
   render() {
@@ -19,8 +19,8 @@ class Full extends Component {
             <Breadcrumb />
             <div className="container-fluid">
               <Switch>
-                <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
-                <Redirect from="/" to="/dashboard"/>
+                <Route path="/home" name="Home" component={Home}/>
+                <Redirect from="/" to="/home"/>
               </Switch>
             </div>
           </main>
